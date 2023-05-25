@@ -1,3 +1,4 @@
+use miniserver::ThreadPool;
 use std::io::{BufRead, BufReader, Write};
 use std::net::{TcpListener, TcpStream};
 use std::{fs, thread};
@@ -5,11 +6,11 @@ use std::{fs, thread};
 fn main() {
     // 监听地址: 127.0.0.1:7878
     let listener = TcpListener::bind("127.0.0.1:7878").unwrap();
-
+    let pool = ThreadPool::new(4);
     for stream in listener.incoming() {
         let stream = stream.unwrap();
 
-        thread::spawn(|| {
+        pool.execute(|| {
             handle_connection(stream);
         });
     }

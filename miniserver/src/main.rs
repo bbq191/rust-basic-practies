@@ -1,7 +1,7 @@
 use miniserver::ThreadPool;
+use std::fs;
 use std::io::{BufRead, BufReader, Write};
 use std::net::{TcpListener, TcpStream};
-use std::{fs};
 
 fn main() {
     // 监听地址: 127.0.0.1:7878

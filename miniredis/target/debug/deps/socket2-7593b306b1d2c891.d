@@ -1,9 +1,0 @@
-/Users/vincixu/Workshops/rust-basic-practies/miniredis/target/debug/deps/socket2-7593b306b1d2c891.rmeta: /Users/vincixu/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.4.9/src/lib.rs /Users/vincixu/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.4.9/src/sockaddr.rs /Users/vincixu/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.4.9/src/socket.rs /Users/vincixu/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.4.9/src/sockref.rs /Users/vincixu/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.4.9/src/sys/unix.rs
-
-/Users/vincixu/Workshops/rust-basic-practies/miniredis/target/debug/deps/socket2-7593b306b1d2c891.d: /Users/vincixu/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.4.9/src/lib.rs /Users/vincixu/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.4.9/src/sockaddr.rs /Users/vincixu/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.4.9/src/socket.rs /Users/vincixu/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.4.9/src/sockref.rs /Users/vincixu/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.4.9/src/sys/unix.rs
-
-/Users/vincixu/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.4.9/src/lib.rs:
-/Users/vincixu/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.4.9/src/sockaddr.rs:
-/Users/vincixu/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.4.9/src/socket.rs:
-/Users/vincixu/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.4.9/src/sockref.rs:
-/Users/vincixu/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.4.9/src/sys/unix.rs:

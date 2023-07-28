@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "little_snip"
+name = "little_snippet"
 version = "0.1.0"

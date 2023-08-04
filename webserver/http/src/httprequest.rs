@@ -58,10 +58,10 @@ impl From<String> for HttpRequest {
                 parsed_method = method;
                 parsed_version = version;
                 parsed_resource = resource;
-            } else if line.contains(":") {
+            } else if line.contains(':') {
                 let (key, value) = process_header_line(line);
                 parsed_headers.insert(key, value);
-            } else if line.len() == 0 {
+            } else if line.is_empty() {
             } else {
                 parsed_msg_body = line;
             }
@@ -77,7 +77,7 @@ impl From<String> for HttpRequest {
 }
 
 fn process_header_line(s: &str) -> (String, String) {
-    let mut header_items = s.split(":");
+    let mut header_items = s.split(':');
     let mut key = String::from("");
     let mut val = String::from("");
     if let Some(k) = header_items.next() {

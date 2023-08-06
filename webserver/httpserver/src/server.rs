@@ -1,7 +1,5 @@
 use super::router::Router;
 use http::httprequest::HttpRequest;
-use std::io::prelude::*;
-use std::io::Read;
 use std::net::TcpListener;
 use std::str;
 
@@ -21,7 +19,7 @@ impl<'a> Server<'a> {
             let mut stream = stream.unwrap();
             println!("Connection established");
             let mut read_buffer = [0; 200];
-            stream.read(&mut read_buffer).unwrap();
+            std::io::Read::read(&mut stream, &mut read_buffer).unwrap();
             let req: HttpRequest = String::from_utf8(read_buffer.to_vec()).unwrap().into();
             Router::route(req, &mut stream);
         }

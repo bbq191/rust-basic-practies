@@ -1,6 +1,6 @@
 use super::router::Router;
 use http::httprequest::HttpRequest;
-use std::io::preload::*;
+use std::io::prelude::*;
 use std::io::Read;
 use std::net::TcpListener;
 use std::str;

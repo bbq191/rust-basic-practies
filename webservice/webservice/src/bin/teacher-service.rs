@@ -7,9 +7,10 @@ use dotenv::dotenv;
 
 use routers::*;
 use sqlx::postgres::PgPoolOptions;
-use sqlx::PgPool;
 use state::AppState;
 
+#[path = "../db_access.rs"]
+mod db_access;
 #[path = "../handlers.rs"]
 mod handlers;
 #[path = "../models.rs"]

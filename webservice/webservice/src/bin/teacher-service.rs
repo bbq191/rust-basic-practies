@@ -11,6 +11,8 @@ use state::AppState;
 
 #[path = "../db_access.rs"]
 mod db_access;
+#[path = "../errors.rs"]
+mod errors;
 #[path = "../handlers.rs"]
 mod handlers;
 #[path = "../models.rs"]
@@ -23,7 +25,7 @@ mod state;
 #[actix_rt::main]
 async fn main() -> io::Result<()> {
     dotenv().ok();
-    let database_url = env::var("DB_URL").expect("database url is not set");
+    let database_url = env::var("DATABASE_URL").expect("database url is not set");
     let db_pool = PgPoolOptions::new().connect(&database_url).await.unwrap();
 
     let shared_data = web::Data::new(AppState {

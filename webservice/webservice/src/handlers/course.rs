@@ -3,6 +3,7 @@ use crate::models::course::UpdateCourse;
 use crate::state::AppState;
 use crate::{db_access::course::*, models::course::CreateCourse};
 use actix_web::{web, HttpResponse};
+
 pub async fn post_new_course(
     new_course: web::Json<CreateCourse>,
     app_state: web::Data<AppState>,

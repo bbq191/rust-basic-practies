@@ -14,14 +14,11 @@ dotenv = "0.15.0"
 openssl = { version = "0.10.56", features = ["vendored"] }
 serde = { version = "1.0.183", features = ["derive"] }
 sqlx = { version = "0.7.1", features = [
-    "postgres",
-    "runtime-tokio-rustls",
-    "macros",
-    "chrono",
+  "postgres",
+  "runtime-tokio-rustls",
+  "macros",
+  "chrono",
 ] }
-
-[[bin]]
-name = "server1"
 
 [[bin]]
 name = "teacher-service"

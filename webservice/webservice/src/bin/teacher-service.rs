@@ -9,13 +9,13 @@ use routers::*;
 use sqlx::postgres::PgPoolOptions;
 use state::AppState;
 
-#[path = "../db_access.rs"]
+#[path = "../db_access/mod.rs"]
 mod db_access;
 #[path = "../errors.rs"]
 mod errors;
-#[path = "../handlers.rs"]
+#[path = "../handlers/mod.rs"]
 mod handlers;
-#[path = "../models.rs"]
+#[path = "../models/mod.rs"]
 mod models;
 #[path = "../routers.rs"]
 mod routers;

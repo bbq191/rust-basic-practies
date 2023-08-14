@@ -21,7 +21,7 @@ pub async fn get_course_detail_db(
     course_id: i32,
 ) -> Result<Course, MyError> {
     let row = sqlx::query_as!(
-        Course,
+        Course
         r#"select * from courses where teacher_id = $1 and id = $2"#,
         teacher_id,
         course_id

@@ -1,3 +1,5 @@
+use std::io::Error;
+
 #[derive(Debug)]
 struct Person {
     name: String,

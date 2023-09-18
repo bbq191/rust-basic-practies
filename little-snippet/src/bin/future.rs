@@ -5,7 +5,7 @@ use std::time::Duration;
 
 #[tokio::main]
 async fn main() {
-    println!("befor reading files");
+    println!("before reading files");
     let h1 = tokio::spawn(async {
         // 异步函数需要用 await 调用
         let _file1 = read_form_file1().await;

@@ -5,7 +5,7 @@ fn main() {
     // 对于整型的比较可以用 TryInto
     let a: i32 = 10;
     let b: u32 = 1030;
-
+    use lkj;
     let b = b.try_into().unwrap();
     if a < b {
         println!("{} < {}", a, b);
